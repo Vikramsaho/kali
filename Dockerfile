@@ -5,7 +5,6 @@ RUN apt-get update \
 RUN apt-get install -yq openssh-server
 
 
-RUN mkdir /var/run/sshd
 
 COPY authorized_keys /root/.ssh/authorized_keys
 COPY utils/apt.sh /root/bin/apt.sh
