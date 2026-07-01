@@ -1,9 +1,9 @@
 FROM kalilinux/kali-rolling
 RUN apt-get update \
   && apt-get upgrade -yq \
-  && apt-get install -yq aptitude git make gcc cpp binutils bash-completion binutils dnsutils
+  && apt-get install -yq aptitude git bash-completion
 RUN apt-get install -yq openssh-server
-RUN apt-get install -yq metasploit-framework sqlmap
+
 
 RUN mkdir /var/run/sshd
 
